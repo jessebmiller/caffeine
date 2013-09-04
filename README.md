@@ -1,4 +1,4 @@
 Caffeine
 ========
 
-type classes in Javascript.
+Type classes in Javascript.
