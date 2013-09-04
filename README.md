@@ -1,4 +1,4 @@
 aviso
 =====
 
-Haskell style type classes in Javascript.
+type classes in Javascript.
