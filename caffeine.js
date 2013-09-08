@@ -47,4 +47,7 @@ prod = mappend;
 mconcat = function (as) { return as.reduce(prod, unit(as[0])); };
 combine = mconcat;
 
-EJSON = makeClass(['clone', 'equals', 'typeName', 'toJSONValue']);
+Monoid(Array, {
+    mempty: K([]),
+    mappend: function (a, b) { return a.concat(b); }
+});
