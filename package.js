@@ -3,10 +3,12 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-    api.use("underscore");
+    api.use(["functionalMeteor", "underscore"]);
     api.add_files("caffeine.js", ["client", "server"]);
-    api.export(['makeClass', 'K', 'Constructor',
+    api.export(['makeClass', 'K', 'Constructor', 'vtable',
                 'Functor', 'fmap',
-                'Monoid', 'unit', 'mappend', 'prod', 'mconcat', 'combine',
+                'Monoid', 'mempty', 'mappend', 'prod', 'mconcat',
+                'Sum', 'plus', 'sum',
+                'Product', 'times', 'prod',
                 'EJSONable'], ["client", "server"]);
 });
